@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+._*
+
+# 에디터
+.vscode/*
+!.vscode/settings.json
+.idea/
+
+# 로그 / 임시 파일
+*.log
+*.tmp
+*.swp
+
+# 환경 변수 (API 키 등 비밀값)
+.env
+.env.*
+
+# 나중에 npm 등을 쓰게 될 경우
+node_modules/
+dist/
