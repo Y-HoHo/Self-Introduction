@@ -2,28 +2,34 @@
   padding: 1rem;
 }
 .header .inner {
-  padding: 1rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .inner .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 .header .inner ul {
   list-style: none;
   display: flex;
-  
+  gap: 20px;
 }
-.header .inner ul li {
 
-}
 .header .inner ul li a {
-  text-decoration: none;
   display: block;
-  width: 80px;
-  height: 20px;
+  color: black;
+  text-decoration: none;
+  width: 70px;
+  height: 40px;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
-  color:  #1d1d1d;
-  transition: 0.5s;
-  box-sizing: border-box;
+
 }
+
 .header .inner ul li a:hover {
   color: dimgray;
   border: 1px solid dimgray;
@@ -31,49 +37,38 @@
 }
 
 /* main_myself */
-.main_myself {
-
-}
 .main_myself .inner {
   padding: 10px 50px 30px 30px;
   display: flex;
   margin-top: 0.5rem;
 }
-.main_myself .inner .picture {
+.main_myself .inner img{
   border-radius: 10px;
-  background-color: bisque;
-  border: 3px solid royalblue;
   width: 250px;
   height: 380px;
 }
 .main_myself .inner .text {
   line-height: 2.5;
   padding-left: 40px;
+  flex: 1;
 }
 .main_myself .inner .text h3 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 30px;
   font-weight: 600;
 }
 .main_myself .inner .text p {
-  width: 250px;
   word-break: keep-all;
 }
 
 /* main_card */
-.main_card {
-
-}
 .main_card .inner {
   display: flex;
   justify-content: space-around;
   margin-top: 30px
   
 }
-.main_card .inner .card1,
-.main_card .inner .card2,
-.main_card .inner .card3,
-.main_card .inner .card4 {
+.main_card .inner .card {
   height: 250px;
   width: 200px;
   word-break: keep-all;
@@ -102,7 +97,4 @@ footer .inner {
   border: 4px solid grey;
   padding: 15px;
   line-height: 2;
-}
-footer .inner div{
-
 }
